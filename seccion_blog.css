@@ -1,0 +1,136 @@
+.titublog {
+    font-size: xx-large;
+    text-align: center;
+  }
+  
+  /* Estilos para el contenedor principal */
+  .contenedor-matriz33 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas en cada fila */
+    grid-gap: 30px; /* Espacio entre las tarjetas */
+    margin: 20px;
+  }
+  
+  /* Estilos para las tarjetas */
+  .tarjeta-cuadro01 {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+  }
+  
+  .tarjeta-cuadro01 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .tarjeta-cuadro01 h3 {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .tarjeta-cuadro01 p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .btn-vermas01 {
+    background-color: #355038;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .btn-vermas01:hover {
+    background-color: #334234;
+  }
+  
+  /* Estilos para la pestaña emergente */
+  .pestaña-emergente02 {
+    display: none; /* Inicialmente oculta */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%; /* Altura de la pestaña emergente */
+    background-color: rgba(17, 11, 11, 0.459);
+    z-index: 1000;
+    animation: subir02 0.5s ease-out forwards; /* Animación de subida */
+    align-items: center;
+  }
+  
+  @keyframes subir02 {
+    from {
+      transform: translateY(100%); /* Inicia desde la parte inferior */
+    }
+    to {
+      transform: translateY(0); /* Termina en la posición original */
+    }
+  }
+  
+  .contenido-emergente02 {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    padding: 20px;
+    overflow-y: auto;
+    position: relative;
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+  
+  .btn-cerrar02 {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+    z-index: 1001; /* Asegura que esté sobre el contenido */
+  }
+  
+  .btn-cerrar02:hover {
+    color: #ff0000;
+  }
+  
+  /* Estilos para la barra de navegación */
+  .barra-navegacion123 {
+    background-color: #ffffff; /* Color de fondo */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espacio inferior */
+  }
+  
+  .barra-navegacion123 ul {
+    list-style-type: none; /* Quitar puntos de lista */
+    padding: 0; /* Sin padding */
+    margin: 0; /* Sin margin */
+    display: flex; /* Alinear los elementos en línea */
+    justify-content: center; /* Centrar horizontalmente */
+  }
+  
+  .barra-navegacion123 li {
+    margin: 0 15px; /* Espacio entre elementos de la lista */
+  }
+  
+  .barra-navegacion123 a {
+    text-decoration: none; /* Quitar subrayado */
+    color: white; /* Color del texto */
+    font-weight: bold; /* Texto en negrita */
+    padding: 5px 10px; /* Espaciado interno del enlace */
+    border: 2px solid transparent; /* Borde por defecto */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, border-color 0.3s; /* Transición suave */
+  }
+  
+  .barra-navegacion123 a:hover {
+    background-color: #628d64; /* Color de fondo al pasar el ratón */
+    border-color: white; /* Color del borde al pasar el ratón */
+  }
+  

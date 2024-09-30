@@ -1,0 +1,94 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2d2424;
+  }
+  
+  nav {
+    background: linear-gradient(to right, #000000, #000000, #441b1b);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    height: 100px;
+  }
+  
+  nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 20px;
+
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+    font-size: x-large;
+  }
+  
+  nav a:hover {
+    background-color: #555;
+  }
+  
+  /* Estilos para las secciones */
+  section {
+    padding: 20px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: auto;
+
+  }
+  
+  section.active {
+    display: block;
+    opacity: 1;
+  }
+  
+  /* Estilos para productos */
+  .product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px ;
+  }
+  
+  .product h3 {
+    margin: 10;
+  }
+  
+  .price {
+    color: #243528;
+    font-weight: bold;
+  }
+  
+  /* Estilos para el pie de página */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2px;
+    position: relative;
+    bottom: 0;
+    width: auto;
+  }
+  

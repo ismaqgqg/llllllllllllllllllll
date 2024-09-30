@@ -1,0 +1,210 @@
+body {
+  height: 200dvh;
+  background-color: #9a9a9a;
+}
+
+
+/*--------------------------contenedor-curso1001-------------------------------------*/
+.contenedor-curso2001 {
+  width: 100%;
+  height: 800px;
+  background: -webkit-linear-gradient(to right, hsla(0, 0%, 0%, 0.358), hsla(317, 78%, 2%, 0.851)), url("https://scontent.flim19-1.fna.fbcdn.net/v/t1.6435-9/36410164_677695045896796_7632590509185171456_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeFER7GdKlOviA0w0St_JDSSdgQKzg978Hl2BArOD3vwec4KdrLi__MLaaJuxieceORgWhnkywErVX2ZTlUhYmwi&_nc_ohc=mVNInjdXwqcQ7kNvgHypcs7&_nc_ht=scontent.flim19-1.fna&_nc_gid=AksbqTwejGPVjz36DID6iub&oh=00_AYDlNRghUAlv0O_XmfTvvVyiPFrLal-SStR-wbCO5eCWNA&oe=671FE960");
+  background: linear-gradient(to right, hsla(233, 74%, 30%, 0), hsla(147, 74%, 15%, 0)), url("https://scontent.flim19-1.fna.fbcdn.net/v/t1.6435-9/36410164_677695045896796_7632590509185171456_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeFER7GdKlOviA0w0St_JDSSdgQKzg978Hl2BArOD3vwec4KdrLi__MLaaJuxieceORgWhnkywErVX2ZTlUhYmwi&_nc_ohc=mVNInjdXwqcQ7kNvgHypcs7&_nc_ht=scontent.flim19-1.fna&_nc_gid=AksbqTwejGPVjz36DID6iub&oh=00_AYDlNRghUAlv0O_XmfTvvVyiPFrLal-SStR-wbCO5eCWNA&oe=671FE960");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  margin-bottom: 200px;
+}
+
+.textos-curso2002 {
+  display: flex;
+  height: 430px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.titulo-centro2003 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wave-curso2004 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+/*---------------------------------------------------------------curso imagenes ------------------------------------------------------------*/
+
+.contenedor-imagenes1005 {
+  display: flex;
+  flex-direction: column;
+  gap: 100px; /* Espacio entre filas */
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.fila1006 {
+  display: flex;
+  gap: 100px; /* Espacio entre imágenes */
+  justify-content: center;
+}
+
+.imagen1007 {
+  position: relative; /* Necesario para posicionar el texto */
+  text-align: center; /* Centrar el texto debajo de cada imagen */
+  transition: transform 0.3s ease-in-out;
+}
+
+.imagen1007 img {
+  width: 700px; /* Ajusta el tamaño de las imágenes según tus necesidades */
+  height: 400px;
+  border: 2px solid #00000000; /* Añade borde si lo deseas */
+  transition: transform 0.3s ease-in-out; /* Para la animación */
+}
+
+.texto1008 {
+  position: absolute;
+  top: 40%; /* Centrar verticalmente */
+  left: 50%; /* Centrar horizontalmente */
+  transform: translate(-50%, -50%); /* Ajuste para centrar exactamente */
+  font-size: 50px;
+  color: #a7a7a7;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 10; /* Asegura que el texto esté por encima de la imagen */
+}
+
+.imagen1007:hover img {
+  transform: scale(1.1); /* Ampliar imagen al pasar el ratón */
+}
+
+.imagen1007:hover .texto1008 {
+  opacity: 1; /* Mostrar texto al pasar el ratón */
+}
+
+/*---------------------------------------------------------contenedor-doble1009-------------------------------------------------------------*/
+
+.contenedor-doble1009 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.imagen1010 img {
+  width: 800px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.texto1011 {
+  margin-left: 20px;
+  text-align: center;
+}
+
+.texto1011 h2 {
+  font-size: 45px;
+}
+
+.texto1011 p {
+  font-size: 20px;
+  color: hsla(0, 0%, 15%, 0.87);
+}
+
+/*--------------------------------------------------- contenedor-negro1012-------------------------------------------*/
+.contenedor-negro1012 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0;
+  background-color: #1e1e1e;
+  margin-top: 0px;
+}
+
+.imagen-container1013 {
+  text-align: center;
+}
+
+.titulo1014 {
+  font-size: 30px;
+  color: #fff;
+}
+
+.formulario-container1015 {
+  max-width: 600px;
+  background-color: #f7f7f700;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-container1015 form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-container1015 label {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.formulario-container1015 input {
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 600px;
+}
+
+.formulario-container1015 button {
+  padding: 10px;
+  background-color: #333;
+  color: rgba(255, 255, 255, 0.76);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.formulario-container1015 button:hover {
+  background-color: #380e0e;
+}
+
+/*--------------------------------------------------- divisiones y líneas -------------------------------------------------*/
+.linea-divisoria1004 {
+  height: 2px;
+  background-color: #000;
+  margin: 50px 0;
+}
+
+/* ----------------------------------- Responsivo ---------------------------------------*/
+
+@media (max-width: 768px) {
+  .contenedor-doble1009 {
+    flex-direction: column;
+  }
+  
+  .texto1011 {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .contenedor-negro1012 {
+    flex-direction: column;
+  }
+}
